@@ -29,7 +29,7 @@ cd terraform-storage
 
 terraform init
 
-terraform plan -var-file env\base.tfvars -out storage.tfplan
+terraform plan -var-file env/base.tfvars -out storage.tfplan
 
 terraform apply storage.tfplan
 ```
@@ -42,7 +42,7 @@ cd terraform-aks
 
 terraform init
 
-terraform plan -var-file env\sandbox.tfvars -out sandbox.tfplan
+terraform plan -var-file env/sandbox.tfvars -out sandbox.tfplan
 
 terraform apply sandbox.tfplan
 
