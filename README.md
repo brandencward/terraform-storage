@@ -1,4 +1,4 @@
-## terraform-aks
+## terraform-storage
 
 This is a basic repo for illustrating the structure of a simple terraform project. Utilizes the resource created by [terraform-aks](https://github.com/brandencward/terraform-aks) as the frontend. It uses helm as the package installer.
 
