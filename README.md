@@ -33,7 +33,7 @@ terraform plan -var-file env\base.tfvars -out storage.tfplan
 
 terraform apply storage.tfplan
 ```
-**Setup terraform-aks*
+**Setup terraform-aks**
 
 ```console
 git clone https://github.com/brandencward/terraform-aks.git
