@@ -43,7 +43,9 @@ cd terraform-aks
 terraform init
 
 terraform plan -var-file env/sandbox.tfvars -out sandbox.tfplan
-
+```
+Enter your SSH Public Key now
+```console
 terraform apply sandbox.tfplan
 
 az aks get-credentials --resource-group sandbox-resources --name sandbox-aks1
