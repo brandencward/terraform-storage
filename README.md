@@ -99,7 +99,7 @@ curl http://**IP**/app/blinky
 
 ```console
 cd terraform-aks
-terraform destroy -var-file env\sandbox.tfvars
+terraform destroy -var-file env/sandbox.tfvars
 ```
 enter public key used in the beginning
 should be 3 things being destroyed
@@ -107,8 +107,8 @@ Type Yes
 
 ```console
 cd terraform-storage
-terraform destroy -var-file env\base.tfvars
-terraform destroy -var-file env\base.tfvar
+terraform destroy -var-file env/base.tfvars
+terraform destroy -var-file env/base.tfvar
 ```
 should be 3 things being destroyed
 Type Yes
