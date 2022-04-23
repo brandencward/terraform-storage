@@ -74,13 +74,6 @@ Open and edit:
 ++  tag: "amd64"
 ```
 
-\blinky-helm\templates\ingress.yaml
-change line 41 to a -
-```diff
---   - host: {{ .host | quote }}
-++   -
-```
-
 **Install Blinky via Helm**
 ```console
 helm install blinky .
