@@ -62,31 +62,18 @@ helm upgrade --install ingress-nginx ingress-nginx  --repo https://kubernetes.gi
 
 **Test App**
 
+[blinky instructions](https://github.com/mbmcmullen27/charts)
+
 ```console
-git clone https://github.com/mbmcmullen27/blinky-helm.git
-```
-
-Open and edit:
-\blinky-helm\values.yaml
-
-```diff
---  tag: "arm"
-++  tag: "amd64"
-```
-
-**Install Blinky via Helm**
-```console
-helm install blinky .
-
+helm repo add blinky https://mbmcmullen27.github.io/charts
+helm install blinky blinky/blinky --set image.tag=amd64
 kubectl get services -A
 ```
 *note the EXTERNAL-IP for the  ingress-nginx-controller*
 
-
 **Test with Blinky**
 ```console
 curl http://**IP**/app/blinky
-
 
            .'|_.-
          .'  '  /_
